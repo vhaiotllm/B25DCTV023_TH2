@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thư viện lớp - Phần A</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Thư viện lớp</h1>
+      <p>Yêu thích: <strong id="favorite-count">0</strong></p>
+    </div>
+    <button id="theme-btn" type="button">Sáng / Tối</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Tìm sách</h2>
+      <div class="tools">
+        <input id="search" type="text" placeholder="Nhập tên sách..." />
+        <select id="genre-filter">
+          <option value="all">Tất cả thể loại</option>
+        </select>
+      </div>
+      <p id="status">Đang tải...</p>
+    </section>
+
+    <section>
+      <h2>Danh sách sách</h2>
+      <div id="book-list" class="book-list"></div>
+    </section>
+
+    <section>
+      <h2>Thêm sách</h2>
+      <form id="book-form" novalidate>
+        <div class="field">
+          <label for="title">Tên sách</label>
+          <input id="title" name="title" type="text" />
+          <small id="title-error" class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="author">Tác giả</label>
+          <input id="author" name="author" type="text" />
+          <small id="author-error" class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="book-genre">Thể loại</label>
+          <select id="book-genre" name="genre">
+            <option value="">-- Chọn thể loại --</option>
+          </select>
+          <small id="genre-error" class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="year">Năm xuất bản</label>
+          <input id="year" name="year" type="number" />
+          <small id="year-error" class="error"></small>
+        </div>
+
+        <button type="submit">Thêm sách</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>Bài thực hành 02 - Lập trình Web</footer>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

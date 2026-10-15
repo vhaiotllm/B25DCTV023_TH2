@@ -1,0 +1,10 @@
+{
+  "name": "b25dctv081-th2",
+  "private": true,
+  "workspaces": ["phan-a", "phan-b"],
+  "scripts": {
+    "dev:a": "npm --prefix phan-a run dev",
+    "dev:b": "npm --prefix phan-b run dev",
+    "build": "npm --prefix phan-a run build && npm --prefix phan-b run build"
+  }
+}
