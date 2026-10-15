@@ -1,5 +1,5 @@
 {
-  "name": "b25dctv081-th2",
+  "name": "b25dctv023-th2",
   "private": true,
   "workspaces": ["phan-a", "phan-b"],
   "scripts": {
